@@ -1,0 +1,31 @@
+extends layout
+ 
+block page
+  - var menu = 'admin'
+ 
+block content
+  div.admin
+    if (articles.length === 0 )
+      p
+        | Brak artyku³ów do wyœwietlenia. Dodaj nowy
+        a(href="/post") artyku³
+        |.
+    else
+       
+      table.table.table-stripped
+        thead
+          tr
+            th(colspan="2") Akcje
+            th Tytu³ posta
+        tbody
+          each article, index in articles
+            tr(data-id="#{article._id}", class=(!article.published)?'nieopublikowany':'')
+              td.action
+                button.btn.btn-danger.btn-sm.remove(type="button")
+                  span.glyphicon.glyphicon-remove(title="Usuñ")
+              td.action
+                button.btn.btn-default.btn-sm.publish(type="button")
+                  span.glyphicon(class=(article.published)?"glyphicon-pause":"glyphicon-play", 
+title=(article.published)?"Usuñ publikacjê":"Opublikuj")
+              td= article.title
+      script(type="text/javascript", src="js/admin.js")

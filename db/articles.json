@@ -1,0 +1,16 @@
+[{
+  "title": "Node jest ruchem",
+  "slug": "node-movement",
+  "published": true,
+  "text": "W jednym losowym wdrożeniu, zwykle zakłada się, że liczba rozproszonych czujników jest większa niż wymagana. W przeciwnym razie pełne pokrycie terenu nie może być zagwarantowane i mogą się pojawić przerwy. Oprócz wykorzystywania większej liczby czujników, lepsze pokrycie można uzyskać z wykorzystaniem mobilnych węzłów czujników..."
+}, {
+  "title": "Express.js Experience",
+  "slug": "express-experience",
+  "text": "W przygotowaniu",
+  "published": false
+},{
+  "title": "Node.js FUNdamentals: A Concise Overview of The Main Concepts",
+  "slug": "node-fundamentals",
+  "published": true,
+  "text": "Node.js został opracowany na podstawie silnika Google Chrome V8 oraz zaimplementowanego w nim języka ECMAScript. Oznacza to, że większość składni Node.js jest podobna do składni JavaScript, stosowanej w warstwie interfejsu aplikacji (innej implementacji języja ECMAScript). Dotyczy to również obiektów, funkcji oraz metod. Więcej informacji o podstawach języka JavaScript można znaleźć w książce JavaScript FUNdamentals."
+  }]

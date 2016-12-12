@@ -1,0 +1,14 @@
+extends layout
+ 
+block page
+  - var menu = 'index'
+block content
+  if (articles.length === 0)
+    | Brak opublikowanej treści.
+    a(href="/login") Zaloguj się
+    |  aby dodać artykuł.
+  else
+    each article, index in articles
+      div
+        h2
+          a(href="/articles/#{article.slug}")= article.title
